@@ -1,0 +1,10 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository in a directory with git init, git creates a new directory titled .git. This dir contains repo history. You must create the first commit. 
+If you don't git init, git won't know that it needs to track history. 
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is a snapshot of what's ready for commit. Working directory is always in flux and being operated on, as opposed to a snapshot.
+The repository is a final snapshot. Staging area allows you to group like changes together in a single commit. 
