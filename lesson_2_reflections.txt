@@ -8,3 +8,8 @@ How is the staging area different from the working directory and the repository?
 
 Staging area is a snapshot of what's ready for commit. Working directory is always in flux and being operated on, as opposed to a snapshot.
 The repository is a final snapshot. Staging area allows you to group like changes together in a single commit. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can run git add only on the change you want to commit. Then you can run git diff --staged (I think) to compare staged to most recent commit. This should only show the logical change that you want to encapsulate in a single commit. 
+Finally, git commit will commit the single logical change.
