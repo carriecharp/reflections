@@ -13,3 +13,24 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 You can run git add only on the change you want to commit. Then you can run git diff --staged (I think) to compare staged to most recent commit. This should only show the logical change that you want to encapsulate in a single commit. 
 Finally, git commit will commit the single logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When you're trying out experimental features, when you're developing something new but need to keep a 'production' version of the app ready-to-go at the same time. 
+Also, branches can be helpful when you want to stop working on one feature and work on something
+else for a while.
+Keep master branch always as the production ready version that is solid and bug free.
+Create a dev branch to do your work. Then merge dev into master when it's final.
+Maybe also have an experiemental branch or more. 
+Handy for sharing the project with the public. But also for 'collaborating' with yourself.
+
+The full command Caroline types to see the visual representation of the commit history is git log --graph --oneline master coins
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams help to see which commits belong to which branch, and to see the reachability of commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches combines the code so that all of the commits are applied to one branch. It's represented in the diagram as branches coming together, so that we can still track the parent of a commit.
+
