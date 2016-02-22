@@ -20,3 +20,17 @@ Use clone when you want to contribute to someone else's repository, or when you 
 and work on it locally. 
 Use branch when you want to try a special feature or a particular bug fix on your current
 project. 
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+The benefit of having a copy of the last known state of the remote stored locally is that you can work offline. You can grab the copy of the remote, and use local tools like git diff and git log to closely inspect the differences between the versions, and then decide precisely how and when to merge. 
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Without Git or GitHub, I could either send copies of my work to collaborators or work on a shared document. Either way, keeping track of changes and when things are merged would be cumbersome. 
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+It's useful to make changes in a separate branch rather than directly in master when you want master to always be in a working state. 
+Changes are only incorporated after they have been reviewed, perhaps by other teammembers via a pull request. 
+It's quicker to just add changes to master, but it's safer to use a separate branch. 
